@@ -1,0 +1,21 @@
+insert into employee
+(staff_id, staff_name, user_id, email, password, supervisor_user_id, sex, unit_code, location, position, expat, contract, balance) values
+('DC-FED-01-00', 'Akbar Maulana', 'akbarbar', 'akbarbar@test.com', '123' , 'DC-DRTR-00-00' , 'P' , 'FED-U01' , 'Pusat' , 'Manager Front End Dev', '0', '0', )
+
+
+{
+	"staff_id" : "DC-BED-01-00",
+	"staff_name" :"Vian Unyu",
+	"user_id" :"vianvian",
+	"email" :"vianvian@test.com",
+	"password" :"123",
+	"supervisor_user_id" :"DC-DRTR-00-00",
+	"sex" : "P",
+	"division_code" :"DC-BED",
+	"unit_code" :"BED-U01",
+	"location" : "Pusat",
+  "position" :"Manager Back End Dev",
+  "expat" :"0",
+  "contract" :"0",
+  "balance" :"60"
+}

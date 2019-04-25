@@ -1,0 +1,12 @@
+insert into leave (leave_name, entitlement, sex) values ('Cuti Hamil', '90', 'W');
+insert into leave (leave_name, entitlement, sex) values ('Cuti Keguguran', '45', 'W');
+insert into leave (leave_name, entitlement, sex) values ('Cuti Menstruasi', '2', 'W');
+insert into leave (leave_name, entitlement, sex) values ('Cuti Istri Hamil', '2', 'P');
+insert into leave (leave_name, entitlement) values ('Cuti Pernikahan', '3');
+insert into leave (leave_name, entitlement) values ('Cuti Anak Menikah', '2');
+insert into leave (leave_name, entitlement) values ('Cuti Kematian Istri / Suami / Anak / Orang Tua / Mertua', '2');
+insert into leave (leave_name, entitlement) values ('Cuti Kematian Kakek, Nenek', '1');
+insert into leave (leave_name, entitlement) values ('Cuti Kematian Saudara atau Keluarga yang terdaftar di kartu keluarga', '1');
+insert into leave (leave_name) values ('Ibadah Haji');
+insert into leave (leave_name) values ('Permintaan dari Pemerintah / Pengadilan / Kepolisian');
+insert into leave (leave_name) values ('Cuti Sakit');

@@ -1,0 +1,61 @@
+login
+http://127.0.0.1:5000/login
+post
+json :
+{
+	"user_id":"vianvian",
+	"password":"123"
+}
+
+get profil
+get
+http://127.0.0.1:5000/getProfil/<staff_id>
+
+get history_leave
+get 
+http://127.0.0.1:5000/getLeave_history
+json:
+{
+	"staff_id" : <staff_id>
+}
+
+create leave request
+post
+http://127.0.0.1:5000/createdLeaveRequest
+json:
+{
+	"user_id" :"Bayuunyu",
+	"leave_type" : "Cuti Pernikahan",
+  "start_date" : "2019-03-28",
+  "start_date_length" : 0.5,
+  "end_date" : "2019-04-03",
+  "end_date_length" : 0.25,
+  "requestor_remarks" : "Cuti Pernikahan"
+}
+
+approve leave request
+put
+http://127.0.0.1:5000/approveLeaveRequest/<leave_id_>
+json:
+{
+	"approval_status" :"1",
+	"approval_remarks" : "Ok, selamat menempuh hidup baru."
+}
+
+var staff_id = "http://127.0.0.1:5000/getProfil/"+getCookie("staff id")dfdsfsdfdfdsfsdf
+{
+	"staff_id" : "DC-BED-01-00",
+	"staff_name" :"Vian Unyu",
+	"user_id" :"vianvian",
+	"email" :"vianvian@test.com",
+	"password" :"123",
+	"supervisor_user_id" :"DC-DRTR-00-00",
+	"sex" : "P",
+	"division_code" :"DC-BED",
+	"unit_code" :"BED-U01",
+	"location" : "Pusat",
+  "position" :"Manager Back End Dev",
+  "expat" :"0",
+  "contract" :"0",
+  "balance" :"60"
+}

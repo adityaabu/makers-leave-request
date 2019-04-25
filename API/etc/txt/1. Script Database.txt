@@ -1,0 +1,69 @@
+create table division (
+division_code varchar (10) primary key,
+division_name varchar (100) unique not null
+);
+
+create table unit (
+unit_code varchar (10) primary key,
+unit_name varchar (100) unique not null,
+division_name varchar
+);
+
+create table leave (
+leave_id serial primary key,
+leave_name varchar (100) unique not null,
+entitlement float,
+sex varchar (1)
+);
+
+create table holiday (
+holiday_id serial primary key,
+holiday_name varchar (100) not null,
+holiday_date date
+);
+
+create table employee (
+staff_id varchar (15) primary key,
+staff_name varchar (100) not null,
+user_id varchar (30) unique not null,
+email varchar (100) unique not null,
+password varchar (100) not null,
+supervisor_user_id varchar (30) not null,
+sex varchar (1) not null,
+division_code varchar (10) not null,
+unit_code varchar (10) not null,
+location varchar (30) not null,
+position varchar (150) not null,
+joined_date date not null,
+expat bit not null,
+contract bit not null,
+balance float not null
+);
+
+create table history_leave (
+leave_id serial primary key,
+staff_id varchar (15) not null,
+supervisor_user_id varchar (30) not null,
+leave_type varchar (100) not null,
+start_date date not null,
+start_date_length float not null,
+end_date date not null,
+end_date_length float not null,
+number_of_leave_days float not null,
+requestor_remarks text not null,
+submission_date date not null,
+approval_status bit,
+approval_remarks text,
+approval_date date
+);
+
+alter table employee
+add FOREIGN KEY (division_code) REFERENCES division(division_code),
+add FOREIGN KEY (unit_code) REFERENCES unit(unit_code);
+
+alter table history_leave
+add FOREIGN KEY (staff_id) REFERENCES employee(staff_id),
+add FOREIGN KEY (leave_type) REFERENCES leave(leave_name);
+
+alter table unit
+add FOREIGN KEY (division_name) REFERENCES division(division_name);

@@ -1,0 +1,4 @@
+insert into division (division_code, division_name) values ('DC-FED', 'Front End Division');
+insert into division (division_code, division_name) values ('DC-BED', 'Back End Division');
+insert into division (division_code, division_name) values ('DC-BDD', 'Database Division');
+insert into division (division_code, division_name) values ('DC-DRTR', 'Direktur');

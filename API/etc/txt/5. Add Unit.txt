@@ -1,0 +1,7 @@
+insert into unit (unit_code, unit_name, division_name) values ('FED-U01', 'Front End Unit 01', 'Front End Division');
+insert into unit (unit_code, unit_name, division_name) values ('FED-U02', 'Front End Unit 02', 'Front End Division');
+insert into unit (unit_code, unit_name, division_name) values ('BED-U01', 'Back End Unit 01', 'Back End Division');
+insert into unit (unit_code, unit_name, division_name) values ('BED-U02', 'Back End Unit 02', 'Back End Division');
+insert into unit (unit_code, unit_name, division_name) values ('BDD-U01', 'Database Unit 01', 'Database Division');
+insert into unit (unit_code, unit_name, division_name) values ('BDD-U02', 'Database Unit 02', 'Database Division');
+insert into unit (unit_code, unit_name, division_name) values ('DRTR-00', 'Direktur', 'Direktur');
